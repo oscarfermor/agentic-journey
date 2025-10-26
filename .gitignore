@@ -1,0 +1,224 @@
+# Python AI Agent Projects .gitignore
+
+# ===========================
+# API Keys & Secrets
+# ===========================
+.env
+.env.*
+*.env
+.secrets
+secrets.json
+config.json
+credentials.json
+*_secrets.py
+api_keys.txt
+
+# ===========================
+# Python
+# ===========================
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.virtualenv/
+pipenv/
+poetry.lock
+
+# ===========================
+# AI/ML Specific
+# ===========================
+# Model files (often large)
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.onnx
+*.safetensors
+models/
+checkpoints/
+weights/
+saved_models/
+
+# Datasets (can be large)
+data/raw/
+data/processed/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.feather
+
+# Vector databases
+chroma_db/
+*.db
+*.sqlite
+*.sqlite3
+vectordb/
+faiss_index/
+pinecone_cache/
+
+# Agent logs and outputs
+logs/
+*.log
+agent_logs/
+traces/
+run_logs/
+outputs/
+results/
+
+# Cache directories
+.cache/
+cache/
+__agent_cache__/
+.llamaindex/
+.langchain/
+.chromadb/
+
+# ===========================
+# Jupyter Notebooks
+# ===========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*-checkpoint.ipynb
+Untitled*.ipynb
+
+# ===========================
+# IDEs & Editors
+# ===========================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Cursor
+.cursor/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ===========================
+# OS Generated
+# ===========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ===========================
+# Testing & Coverage
+# ===========================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ===========================
+# Documentation
+# ===========================
+docs/_build/
+site/
+.mkdocs_cache/
+
+# ===========================
+# Temporary Files
+# ===========================
+*.tmp
+*.temp
+*.bak
+*.swp
+tmp/
+temp/
+scratch/
+
+# ===========================
+# Agent-Specific
+# ===========================
+# LangChain
+.langchain_cache/
+
+# LlamaIndex
+storage/
+.storage/
+
+# AutoGPT
+auto_gpt_workspace/
+workspace/
+
+# Agent conversation histories
+conversations/
+chat_history/
+memory/
+
+# Experiment tracking
+wandb/
+mlruns/
+.neptune/
+
+# ===========================
+# Package Managers
+# ===========================
+poetry.lock
+Pipfile.lock
+pdm.lock
+requirements-dev.txt
